@@ -1,3 +1,4 @@
+// menu
 document.addEventListener("DOMContentLoaded", function () {
   let menu = document.getElementById("menu");
   let burger = document.getElementById("burger");
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// nav active link
 document.addEventListener("DOMContentLoaded", function () {
   let links = document.querySelectorAll(".nav-link");
   let currentUrl = window.location.pathname.split("/").pop();
@@ -30,4 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active");
     }
   });
+});
+
+// scroll nav
+let num = document.getElementById("num");
+let navTop = document.getElementById("nav_top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 30) {
+    navTop.classList.add("scrolled");
+    num.classList.add("scrolled");
+  } else {
+    navTop.classList.remove("scrolled");
+    num.classList.remove("scrolled");
+  }
 });

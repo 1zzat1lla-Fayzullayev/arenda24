@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arenda24 PRO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body id="content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="custom-container d-flex">
+          <a class="navbar-brand d-none d-lg-block" href="/">
+            <img src="/images/logo-arenda24pro.png" alt="Arenda24 PRO" style="width: 250px" />
+          </a>
+          <div class="container-fluid d-flex flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100 border-none border-lg-bottom">
+              <div>
+                <div class="text-light fw-bold d-none d-lg-block">
+                  Email:
+                  <a href="mailto:v-twin1100@yandex.ru" class="text-light fw-light text-decoration-none">v-twin1100@yandex.ru</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between w-100">
+                  <div class="text-light fw-bold">
+                    Тел:
+                    <a href="tel:+79673232623" class="text-light fw-light text-decoration-none">+7 (967) 323-26-23</a>
+                  </div>
+                  <button class="navbar-toggler mt-2" type="button" onclick="toggleMenu()">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="d-none d-lg-block">
+                <div class="fw-bold text-white">11:00 - 20:00</div>
+                <div>365 дней в году</div>
+              </div>
+              <div class="d-none d-lg-block">
+                <a href="https://vk.com/" class="icon fa-vk"><img src="/images/vk.png" style="width: 30px" /></a>
+                <a href="https://web.telegram.org/" class="icon fa-telegram"><img src="/images/telegram.png" style="width: 30px" /></a>
+              </div>
+              <div class="button big d-none d-lg-block" id="callback">Обратный звонок</div>
+            </div>
+      
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
+              <ul class="navbar-nav d-flex gap-lg-3 gap-xl-5 me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link text-white px-0 fs-5 active" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-0 fs-5" href="about.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-0 fs-5" href="equipment.html">Оборудование</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-0 fs-5" href="ready.html">Готовые решения</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-0 fs-5" href="portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-0 fs-5" href="contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Custom Hamburger Menu -->
+      <div id="customMenu" class="custom-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="equipment.html">Оборудование</a>
+        <a href="ready.html">Готовые решения</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+
+    <!-- Banner -->
+    <section class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>ЗВУК. СВЕТ. СЦЕНА.</h1>
+        <p class="lead">
+          Техническое обеспечение мероприятий. Прокат концертного и сценического
+          оборудования с доставкой и обслуживанием.
+        </p>
+        <a href="#main" class="btn btn-light btn-lg">Вперед!</a>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="main" class="container my-5">
+      <!-- Portfolio Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Фотогалерея проектов</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="images/1_b.jpg"
+                class="card-img-top"
+                alt="Аренда фермы для выставки картин в Доме Смирнова"
+              />
+              <div class="card-body">
+                <h5 class="card-title">23 декабря 2024</h5>
+                <p class="card-text">
+                  Аренда фермы для выставки картин в Доме Смирнова
+                </p>
+                <a href="/portfolio/624/" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="images/1_b_1.jpg"
+                class="card-img-top"
+                alt="Аренда звука и света для корпоратива ЦПМ"
+              />
+              <div class="card-body">
+                <h5 class="card-title">21 декабря 2024</h5>
+                <p class="card-text">
+                  Аренда звука и света для корпоратива ЦПМ
+                </p>
+                <a href="/portfolio/623/" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="/portfolio/" class="btn btn-outline-primary"
+            >Смотреть все фотогалереи</a
+          >
+        </div>
+      </section>
+
+      <!-- Equipment Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Наше оборудование</h2>
+        <ul
+          class="nav nav-tabs justify-content-center mb-4"
+          id="equipmentTabs"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-white active"
+              id="sound-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#sound"
+              type="button"
+              role="tab"
+              aria-controls="sound"
+              aria-selected="true"
+            >
+              Звуковое оборудование
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-white"
+              id="light-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#light"
+              type="button"
+              role="tab"
+              aria-controls="light"
+              aria-selected="false"
+            >
+              Световое оборудование
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-white"
+              id="stage-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#stage"
+              type="button"
+              role="tab"
+              aria-controls="stage"
+              aria-selected="false"
+            >
+              Сцена и конструкции
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-white"
+              id="video-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#video"
+              type="button"
+              role="tab"
+              aria-controls="video"
+              aria-selected="false"
+            >
+              Видео оборудование
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="equipmentTabsContent">
+          <!-- Sound Equipment -->
+          <div
+            class="tab-pane fade show active"
+            id="sound"
+            role="tabpanel"
+            aria-labelledby="sound-tab"
+          >
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img
+                    src="images/speakers.jpg"
+                    class="card-img-top"
+                    alt="Акустические системы"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Акустические системы</h5>
+                    <a href="/sound/speakers/" class="btn btn-primary"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for other sound equipment -->
+            </div>
+          </div>
+          <!-- Light Equipment -->
+          <div
+            class="tab-pane fade"
+            id="light"
+            role="tabpanel"
+            aria-labelledby="light-tab"
+          >
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img
+                    src="images/moving_head.jpg"
+                    class="card-img-top"
+                    alt="Динамические приборы"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Динамические приборы</h5>
+                    <a href="/light/moving_head/" class="btn btn-primary"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for other light equipment -->
+            </div>
+          </div>
+          <!-- Stage Equipment -->
+          <div
+            class="tab-pane fade"
+            id="stage"
+            role="tabpanel"
+            aria-labelledby="stage-tab"
+          >
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img
+                    src="images/stage.jpg"
+                    class="card-img-top"
+                    alt="Сценические комплексы"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Сценические комплексы</h5>
+                    <a href="/stage/stage/" class="btn btn-primary"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for other stage equipment -->
+            </div>
+          </div>
+          <!-- Video Equipment -->
+          <div
+            class="tab-pane fade"
+            id="video"
+            role="tabpanel"
+            aria-labelledby="video-tab"
+          >
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img
+                    src="images/led.jpg"
+                    class="card-img-top"
+                    alt="Светодиодные экраны"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Светодиодные экраны</h5>
+                    <a href="/video/led_screen/" class="btn btn-primary"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for other video equipment -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ready Solutions Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Готовые решения</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/ready_sound.jpg"
+                class="card-img-top"
+                alt="Аренда комплектов звукового оборудования"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Аренда звукового оборудования</h5>
+                <a href="/ready/sound/" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/ready_light.jpg"
+                class="card-img-top"
+                alt="Аренда комплектов светового оборудования"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Аренда светового оборудования</h5>
+                <a href="/ready/light/" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/ready_sound_light.jpg"
+                class="card-img-top"
+                alt="Аренда комплектов звукового и светового оборудования"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Аренда звукового и светового оборудования
+                </h5>
+                <a href="/ready/sound_light/" class="btn btn-primary"
+                  >Смотреть</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Контакты</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Форма связи</h3>
+            <form method="post" action="/contact/">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Имя"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="contact"
+                  placeholder="Email или телефон"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" name="category" required>
+                  <option value="">- Выберите тему -</option>
+                  <option value="1">Аренда оборудования</option>
+                  <option value="2">Приглашение в тендер</option>
+                  <option value="3">Запрос консультации</option>
+                  <option value="4">Оставить отзыв руководству</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="6"
+                  placeholder="Ваше сообщение"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LeN8NEZAAAAAAL-mu7zKCqYg2hthw0TnTxHPIYy"
+                ></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+              <button type="reset" class="btn btn-secondary">Очистить</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h3>Схема проезда</h3>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7596a67eef3d05b5f3c54d944aeb0a35a5307f1eddb4ed491806cb3ce7aa34b&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>ЗВУК</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/sound/speakers/" class="text-white"
+                  >Акустические системы</a
+                >
+              </li>
+              <li>
+                <a href="/sound/monitors/" class="text-white">Мониторы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>СВЕТ</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/light/moving_head/" class="text-white"
+                  >Динамические приборы</a
+                >
+              </li>
+              <li>
+                <a href="/light/washlight/" class="text-white">Заливной свет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>СПЕЦЭФФЕКТЫ</h5>
+            <ul class="list-unstyled">
+              <li><a href="/" class="text-white">Сценические комплексы</a></li>
+              <li><a href="/stage/podium/" class="text-white">Подиумы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>ВИДЕО</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/video/led_screen/" class="text-white"
+                  >Светодиодные экраны</a
+                >
+              </li>
+              <li>
+                <a href="/video/plasma_lcd/" class="text-white"
+                  >Плазменные, LCD экраны</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://vk.com/" class="text-white"
+                ><i class="bi bi-vk"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://web.telegram.org/" class="text-white"
+                ><i class="bi bi-telegram"></i
+              ></a>
+            </li>
+          </ul>
+          <p>
+            © 2025, Arenda24 PRO.
+            <a href="/copyright/" class="text-white">Авторские права</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

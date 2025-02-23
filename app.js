@@ -47,3 +47,22 @@ window.addEventListener("scroll", () => {
     num.classList.remove("scrolled");
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabLinks = document.querySelectorAll(".tab-list a");
+  const tabs = document.querySelectorAll(".tabs .tab");
+
+  tabLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); 
+
+      document.querySelector(".tab-list a.active").classList.remove("active");
+      document.querySelector(".tabs .tab.active").classList.remove("active");
+
+      this.classList.add("active");
+      const targetTab = this.getAttribute("data-tab");
+      document.querySelector(`.tabs .tab.${targetTab}`).classList.add("active");
+    });
+  });
+});

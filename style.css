@@ -92,8 +92,8 @@ ul.header__menu li {
   float: left;
   position: relative;
 }
-.scrolled{
-    display: none !important;
+.scrolled {
+  display: none !important;
 }
 /*
   .scroll-m .header__wrap-info{
@@ -2304,27 +2304,11 @@ button.special:active,
 /* Flex */
 
 .flex {
-  display: -ms-flexbox;
-  -ms-flex-pack: justify;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -webkit-box;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -webkit-box-pack: justify;
   justify-content: space-between;
-}
-
-.flex.flex-2,
-.flex.flex-3 {
-  -moz-align-items: stretch;
-  -ms-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  gap: 10px;
+  width: 100%;
 }
 
 .flex.flex-2 .col {
@@ -3964,8 +3948,8 @@ h1 {
   font-size: 20px;
 }
 
-.banner_btn:hover{
-    background-color: #2931605d;
+.banner_btn:hover {
+  background-color: #2931605d;
   color: #ffffff;
 }
 

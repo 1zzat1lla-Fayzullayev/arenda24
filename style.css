@@ -4059,49 +4059,16 @@ body.subpage {
 }
 
 #menu .close {
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-  -webkit-tap-highlight-color: transparent;
-  border: 0;
-  color: #9ba2a8;
+ 
   cursor: pointer;
   display: block;
-  height: 3.25em;
-  line-height: 3.25em;
-  padding-right: 1.25em;
   position: absolute;
-  right: 0;
+  right: 20px;
   text-align: right;
-  top: 0;
-  vertical-align: middle;
-  width: 7em;
+  top: 20px;
 }
 
-#menu .close:before {
-  content: "";
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
-}
 
-#menu .close:before {
-  font-size: 1.25em;
-}
-
-#menu .close:hover {
-  color: #ffffff;
-}
-
-@media screen and (max-width: 736px) {
-  #menu .close {
-    height: 4em;
-    line-height: 4em;
-  }
-}
 
 #menu.visible {
   -webkit-transform: translateX(0);
@@ -4116,6 +4083,24 @@ body.subpage {
     padding: 2.5em 1.75em;
   }
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10001;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease;
+  }
+  
+  #overlay.visible {
+    visibility: visible;
+    opacity: 1;
+  }
 
 /* Banner */
 

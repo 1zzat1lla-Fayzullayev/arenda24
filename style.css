@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 .logo img {
   width: 100%;
 }
@@ -94,16 +101,8 @@ ul.header__menu li {
   width: 100%;
 }
 
-.flex.flex-2 .col {
-  width: 48%;
-}
-
 .flex.flex-3 .colcss {
   width: 31%;
-}
-
-.flex.flex-4 .col {
-  width: 22%;
 }
 
 .flex.flex-tabs {
@@ -175,7 +174,6 @@ label {
   margin: 0 0 1em 0;
 }
 
-
 .select-wrapper {
   text-decoration: none;
   display: block;
@@ -203,7 +201,6 @@ label {
   top: 0;
   width: 2.75em;
 }
-
 
 textarea {
   padding: 0.75em 1em;
@@ -258,7 +255,6 @@ input[type="radio"] + label:before {
 
 .image.fit {
   display: block;
-  margin: 0 0 2em 0;
   width: 100%;
 }
 
@@ -281,26 +277,6 @@ input[type="radio"] + label:before {
 .image.main img {
   width: 100%;
 }
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-
-  padding-top: 25px;
-  height: 0;
-}
-
-.video-wrapper iframe,
-.video-wrapper object,
-.video-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 
 /* Tab */
 
@@ -342,8 +318,6 @@ ul.tab-list li a:hover {
   display: flex;
 }
 
-
-
 /* Wrapper */
 
 .wrapper {
@@ -351,7 +325,7 @@ ul.tab-list li a:hover {
   position: relative;
 }
 
-.wrapper:before {
+.wrapper.style1:before {
   content: "";
   position: absolute;
   top: 0;
@@ -359,7 +333,21 @@ ul.tab-list li a:hover {
   width: 100%;
   height: 100%;
   display: block;
-  background-image: url(https://arenda-pro-24.ru/images/bg.jpg);
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: 1;
+}
+.wrapper.style2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(/images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.35;
@@ -387,8 +375,6 @@ ul.tab-list li a:hover {
   background-color: #062038;
   color: #c1c7cd;
 }
-
-
 
 @media screen and (max-width: 1280px) {
   .wrapper > .inner {
@@ -707,11 +693,78 @@ h1 {
   background-color: transparent;
   border: 2px solid #293160;
   font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: white;
 }
 
 .banner_btn:hover {
   background-color: #2931605d;
   color: #ffffff;
+}
+
+.video {
+  background: rgba(255, 255, 255, 0.075);
+  cursor: pointer;
+}
+.caption {
+  padding: 10px 0 20px 20px;
+  font-size: 18px;
+}
+
+.video_p {
+  padding: 0.3em 1.2em;
+}
+
+.allImages {
+  text-decoration: none;
+  background: #041625;
+  color: white;
+  margin-top: 50px;
+  padding: 10px 25px 10px 25px;
+  transition: all ease-in-out 0.3s;
+}
+
+.allImages:hover {
+  background-color: #06243c;
+}
+
+/* LightBlock */
+
+.lightBlock {
+  overflow: hidden;
+  width: 100%;
+}
+
+.lightBlock img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.lightBlock:hover img {
+  transform: scale(1.1);
+}
+
+.lightBlockP {
+  color: #c0c5c9;
+  padding: 1.5em;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* tabs */
+
+.wrapper.style2 {
+  background-color: #041625;
+  color: #c0c5c9;
+  text-decoration: none;
+}
+.wrapper.style2 a {
+  text-decoration: none;
+  color: white;
 }
 
 /*modal window*/
@@ -798,56 +851,7 @@ body.is-loading #banner:before {
   opacity: 1;
 }
 
-
 /* Footer */
-
-#footer {
-  padding: 6em 0 4em 0;
-}
-
-#footer > .inner {
-  margin: 0 auto;
-  width: 80em;
-}
-
-#footer .copyright {
-  color: #676d71;
-  font-size: 0.9em;
-  margin: 0 0 2em 0;
-  padding: 0;
-  text-align: center;
-}
-
-#footer .copyright .icons {
-  margin: 2em 0 0 0;
-}
-
-@media screen and (max-width: 1280px) {
-  #footer > .inner {
-    width: 65em;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  #footer > .inner {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #footer {
-    padding: 3em 0 1em 0;
-  }
-}
-
-.block {
-  background-color: rgba(255, 255, 255, 0.075);
-  padding: 30px 15px;
-  margin-bottom: 30px;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #666666;
-}
 
 .underline_green {
   border-bottom: 3px #b0c73e solid !important;
@@ -863,4 +867,13 @@ body.is-loading #banner:before {
 
 .underline_blue {
   border-bottom: 3px #589bd4 solid !important;
+}
+
+.footer_link_s a {
+  color: #c1c7cd !important;
+  font-size: 15px !important;
+}
+
+.border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
 }

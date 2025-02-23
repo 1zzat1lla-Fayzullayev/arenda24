@@ -1,12 +1,12 @@
-function toggleMenu() {
-    let menu = document.getElementById("customMenu");
-    let body = document.body;
-  
-    if (menu.style.width === "250px") {
-      menu.style.width = "0";
-      body.classList.remove("menu-open");
-    } else {
-      menu.style.width = "250px";
-      body.classList.add("menu-open");
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let links = document.querySelectorAll(".nav-link");
+  let currentUrl = window.location.pathname.split("/").pop();
+
+  links.forEach((link) => {
+    if (link.getAttribute("href") === currentUrl) {
+      link.classList.add("active");
     }
-  }
+  });
+});

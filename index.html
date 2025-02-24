@@ -487,121 +487,134 @@
           </div>
         </div>
       </section>
+
       <section class="wrapper style1">
         <div class="inner">
           <div class="row">
-            <section class="6u 12u$(medium)">
-              <h2>+7 (967) 323-26-23</h2>
-              <p>
+            <div class="col-md-6">
+              <h2 style="color: white; font-weight: 700">+7 (967) 323-26-23</h2>
+              <p style="font-size: 15px; margin-top: 50px">
                 Если Вы делаете заказ по аренде звука, света или сцены, будьте
-                готовы назвать <strong>дату</strong> мероприятия,
-                <strong>место</strong> проведения , приблизительное
-                <strong>число гостей</strong> и список выступающих
-                <strong>артистов</strong>. Без этой важной информации мы не
-                сможем рассчитать стоимость услуг.
+                готовы назвать
+                <strong style="color: white">дату</strong> мероприятия,
+                <strong style="color: white">место</strong> проведения,
+                приблизительное
+                <strong style="color: white">число гостей</strong> и список
+                выступающих <strong style="color: white">артистов</strong>. Без
+                этой важной информации мы не сможем рассчитать стоимость услуг.
               </p>
-            </section>
-            <section class="3u 6u(medium) 12u$(small)">
-              <h3>Контакты</h3>
-              <a href="mailto:v-twin1100@yandex.ru" class="text-decoration-none"
-                >v-twin1100@yandex.ru</a
-              >
-            </section>
-            <section class="3u$ 6u$(medium) 12u$(small)">
-              <h3>Важно</h3>
-              <p>
+            </div>
+            <div class="col-md-3">
+              <h3 style="color: white">Контакты</h3>
+              <p style="color: white; font-size: 15px">
+                г. Сочи, ул. Голубые дали 20/1<br />11:00-20:00 365 дней в
+                году<br /><br /><strong>тел. +7 (967) 323-226-23</strong><br />
+                <a
+                  href="mailto:v-twin1100@yandex.ru"
+                  class="text-decoration-none"
+                  style="color: white"
+                  >v-twin1100@yandex.ru</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h3 style="color: white">Важно</h3>
+              <p style="font-size: 15px; margin-top: 20px">
                 Убедительная просьба: пишите и звоните
-                <strong>ТОЛЬКО ПО ПРОКАТУ</strong> оборудования. Нашу компанию
-                <strong>НЕ</strong> интересует предложения, не имеющие отношения
-                к нашей деятельности.
+                <strong style="color: white">ТОЛЬКО ПО ПРОКАТУ</strong>
+                оборудования. Нашу компанию
+                <strong style="color: white">НЕ</strong> интересует предложения,
+                не имеющие отношения к нашей деятельности.
               </p>
-            </section>
+            </div>
           </div>
-          <hr class="major" />
-          <!-- Elements -->
-          <div class="row 200%">
-            <div class="6u 12u$(medium)">
-              <!-- Form -->
-              <h3 id="elements">Форма связи</h3>
+          <hr class="my-5" />
+          <div class="row">
+            <div class="col-md-6">
+              <h3 id="elements" style="color: white">Форма связи</h3>
               <form method="post" action="/contact/">
-                <div class="row uniform">
-                  <div class="6u 12u$(xsmall)">
+                <div class="row g-3">
+                  <div class="col-md-6">
                     <input
                       type="text"
+                      class="form-control"
                       name="name"
                       id="name"
-                      value=""
                       placeholder="Имя"
                     />
                   </div>
-                  <div class="6u$ 12u$(xsmall)">
+                  <div class="col-md-6">
                     <input
                       type="text"
+                      class="form-control"
                       name="contact"
                       id="contact"
-                      value=""
                       placeholder="Email или телефон"
                     />
                   </div>
-                  <div class="12u$">
-                    <div class="select-wrapper">
-                      <select name="category" id="category">
-                        <option value="">- Выберите тему -</option>
-                        <option value="1">Аренда оборудования</option>
-                        <option value="2">Приглашение в тендер</option>
-                        <option value="3">Запрос консультации</option>
-                        <option value="4">Оставить отзыв руководству</option>
-                      </select>
-                    </div>
+                  <div class="col-12">
+                    <select class="form-select" name="category" id="category">
+                      <option value="">- Выберите тему -</option>
+                      <option value="1">Аренда оборудования</option>
+                      <option value="2">Приглашение в тендер</option>
+                      <option value="3">Запрос консультации</option>
+                      <option value="4">Оставить отзыв руководству</option>
+                    </select>
                   </div>
-                  <div class="4u 12u$(small)">
+                  <div class="col-md-4 d-flex align-items-center gap-3">
                     <input
                       type="radio"
+                      class="form-check-input"
+                      name="priority"
                       id="priority-low"
-                      name="priority"
-                      checked=""
                       value="not urgent"
+                      checked
                     />
-                    <label for="priority-low">Не срочное</label>
+                    <label class="form-check-label" for="priority-low"
+                      >Не срочное</label
+                    >
                   </div>
-                  <div class="4u 12u$(small)">
+                  <div class="col-md-4 d-flex align-items-center gap-3">
                     <input
                       type="radio"
-                      id="priority-normal"
+                      class="form-check-input"
                       name="priority"
+                      id="priority-normal"
                       value="normal"
                     />
-                    <label for="priority-normal">Обычное </label>
+                    <label class="form-check-label" for="priority-normal"
+                      >Обычное</label
+                    >
                   </div>
-                  <div class="4u$ 12u$(small)">
+                  <div class="col-md-4 d-flex align-items-center gap-3">
                     <input
                       type="radio"
-                      id="priority-high"
+                      class="form-check-input"
                       name="priority"
+                      id="priority-high"
                       value="urgent"
                     />
-                    <label for="priority-high">Срочное</label>
+                    <label class="form-check-label" for="priority-high"
+                      >Срочное</label
+                    >
                   </div>
-                  <div class="12u$">
+
+                  <div class="col-12">
                     <textarea
+                      class="form-control"
                       name="message"
                       id="message"
                       placeholder="Ваше сообщение"
                       rows="6"
                     ></textarea>
                   </div>
-                  <div class="12u$">
-                    <ul class="actions">
-                      <div
-                        class="g-recaptcha"
-                        data-sitekey="6LeN8NEZAAAAAAL-mu7zKCqYg2hthw0TnTxHPIYy"
-                      ></div>
-                      <br />
-                      <li><input type="submit" value="Отправить" /></li>
-                      <li>
-                        <input type="reset" value="Очистить" class="alt" />
-                      </li>
-                    </ul>
+                  <div class="formButtons d-flex align-items-center gap-3 flex-column flex-lg-row w-100 pt-4 pb-5">
+                    <button type="submit" class="formSubmit button">
+                      Отправить
+                    </button>
+                    <button type="reset" class="formClose button">
+                      Очистить
+                    </button>
                   </div>
                 </div>
                 <input
@@ -612,8 +625,8 @@
               </form>
               <hr />
             </div>
-            <div class="6u$ 12u$(medium)">
-              <h4>Схема проезда</h4>
+            <div class="col-md-6">
+              <h4 style="color: white">Схема проезда</h4>
               <script
                 type="text/javascript"
                 charset="utf-8"
@@ -697,10 +710,7 @@
           </li>
           <li class="list-inline-item">
             <a href="#" class="text-decoration-none">
-              <img
-                src="/images/telegram.png"
-                style="width: 35px"
-              />
+              <img src="/images/telegram.png" style="width: 35px" />
             </a>
           </li>
         </ul>

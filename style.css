@@ -161,64 +161,6 @@ ul.header__menu li {
   }
 }
 
-/* Form */
-
-form {
-  margin: 0 0 2em 0;
-}
-
-label {
-  display: block;
-  font-size: 0.9em;
-  font-weight: 700;
-  margin: 0 0 1em 0;
-}
-
-.select-wrapper {
-  text-decoration: none;
-  display: block;
-  position: relative;
-}
-
-.select-wrapper:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
-}
-
-.select-wrapper:before {
-  content: "\f078";
-  display: block;
-  height: 2.75em;
-  line-height: 2.75em;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 2.75em;
-}
-
-textarea {
-  padding: 0.75em 1em;
-}
-
-input[type="checkbox"]:checked + label:before,
-input[type="radio"]:checked + label:before {
-  content: "\f00c";
-}
-
-input[type="checkbox"] + label:before {
-  border-radius: 0px;
-}
-
-input[type="radio"] + label:before {
-  border-radius: 100%;
-}
-
 /* Image */
 
 .image {
@@ -950,4 +892,124 @@ body.is-loading #banner:before {
 }
 .itemprice {
   margin-top: 10px;
+}
+
+/* form */
+
+.form-check-input {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: white;
+  border-color: white;
+  position: relative;
+}
+
+.form-check-input:checked::after {
+  content: "✓";
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.form-check-label {
+  margin-top: 5px;
+  user-select: none;
+}
+
+.form-select {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  appearance: none;
+}
+
+.form-select option {
+  background: #333;
+  color: white;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-select:focus {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: none;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+textarea.form-control:focus {
+  background: rgba(255, 255, 255, 0.075);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: none;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.formSubmit {
+  text-decoration: none;
+  background: #041625;
+  color: white;
+  padding: 10px 25px 10px 25px;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+
+.formSubmit:hover {
+  background-color: #06243c;
+}
+
+.formClose {
+  background-color: transparent;
+  border: 1px solid #36484f;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none;
+  color: white;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 992px) {
+  .formClose {
+    width: 100%;
+  }
+  .formSubmit {
+    width: 100%;
+  }
+}
+
+.formClose:hover {
+  background-color: #36484f;
+  color: #ffffff;
 }

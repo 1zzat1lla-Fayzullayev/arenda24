@@ -877,3 +877,77 @@ body.is-loading #banner:before {
 .border-top {
   border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
+
+/* Effect html */
+
+.bg-dark-custom {
+  background-color: #222222;
+}
+.logo_orange {
+  color: #e9a422 !important;
+}
+
+.main a {
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.list-unstyled a {
+  text-decoration: underline;
+  font-size: 19px;
+  color: white;
+}
+
+.orange_list {
+  text-decoration: none !important;
+}
+
+.ul_orange_list li {
+  list-style: disc;
+}
+
+.itemprice {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.itemname {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.block_link {
+  text-decoration: none;
+  font-size: 19px;
+  color: inherit;
+}
+.block_link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.block {
+  background-color: rgba(255, 255, 255, 0.075);
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #666666;
+}
+.block_img {
+  width: 100%;
+  height: auto;
+}
+.block_content {
+  padding: 10px;
+}
+.block_content ul li {
+  list-style: disc;
+  font-size: 15px;
+  color: white;
+}
+.itemprice {
+  margin-top: 10px;
+}
